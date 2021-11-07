@@ -26,3 +26,5 @@ def preprocess_smiles_data(filepath_data_train=None, filepath_smiles_test=None):
     masks = [np.where(label != 0) for label in y]
 
     return x_train_set, y, x_test_set, masks
+
+preprocess_smiles_data("data/data_train.csv", "data/smiles_test.csv")
